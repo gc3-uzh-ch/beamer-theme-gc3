@@ -24,13 +24,14 @@ title slide (unless the `informal` style option is given, see "Usage"
 below).
 
 The logo files are not included in this repository for copyright
-reasons; if you work at the [UZH][uzh], you are able to download them
-from the [_Vorlangenboerse_][2].  The files containing the logos
-_must_ be named `uzh_logo_d_pos.pdf` or `uzh_logo_e_pos.pdf`: the `e`
-one is the English/International version, the `d` one is the
-German-language logo.  If you compile your slides to a Postscript file
-instead of PDF, then you should use the `.eps` files of the logos,
-instead of the `.pdf` ones.
+reasons; if you work at the [UZH][uzh], you are able to
+[download them from the UZH Corporate Design website][logos].
+
+The files containing the logos _must_ be named `uzh_logo_d_pos.pdf` or
+`uzh_logo_e_pos.pdf`: the `e` one is the English/International
+version, the `d` one is the German-language logo.  If you compile your
+slides to a Postscript file instead of PDF, then you should use the
+`.eps` files of the logos, instead of the `.pdf` ones.
 
 
 Usage
@@ -95,7 +96,7 @@ later version.
 [3]: http://www.cd.uzh.ch/index.html
 
 [uzh]: http://www.uzh.ch/
-
+[logos]: http://www.cd.uzh.ch/downloads/logos.html
 
 <!--  LocalWords:  english usetheme
  -->
