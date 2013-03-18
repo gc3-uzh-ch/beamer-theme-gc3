@@ -2,10 +2,13 @@ The GC3 Beamer/LaTeX theme
 ==========================
 
 This directory hosts the GC3 style files for use with the LaTeX
-[beamer][1] document class.  The GC3 theme is based on the Beamer
-theme [uzhneu][2] by Juergen Spitzmueller and the
-[Corporate Design section of the University of Zurich][3], released on
-October 2010.
+[beamer][1] document class.  You can see an example in the
+[example.pdf](https://github.com/gc3-uzh-ch/beamer-theme-gc3/blob/master/example.pdf?raw=true)
+file.
+
+The GC3 theme is based on the Beamer theme [uzhneu][2] by Juergen
+Spitzmueller and the [Corporate Design section of the University of Zurich][3],
+released on October 2010.
 
 
 Distributed files
@@ -81,7 +84,7 @@ of the logo with the `english` option:
 Copyright and License
 ---------------------
 
-The original `uzhneu` theme is Copyright 2010 Juergen Spitzmueller <spitzmueller@ds.uzh.ch>.
+The original [`uzhneu` theme][2] is Copyright 2010 Juergen Spitzmueller <spitzmueller@ds.uzh.ch>.
 
 Modifications are Copyright 2012 Riccardo Murri <riccardo.murri@uzh.ch>.
 
