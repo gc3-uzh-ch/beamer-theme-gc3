@@ -27,7 +27,7 @@ title slide (unless the `informal` style option is given, see "Usage"
 below).
 
 The logo files are not included in this repository for copyright
-reasons; if you work at the [UZH][uzh], you are able to
+reasons; if you work at the [UZH][uzh], you can
 [download them from the UZH Corporate Design website][logos].
 
 The files containing the logos _must_ be named `uzh_logo_d_pos.pdf` or
@@ -56,7 +56,6 @@ activate those you need to pass options `serif` and `mathserif` to the
 
 The `example.tex` file provides a sample presentation in the English
 language with the "serif" font style.
-
 
 ### Options
 
@@ -89,7 +88,7 @@ The original [`uzhneu` theme][2] is Copyright 2010 Juergen Spitzmueller <spitzmu
 Modifications are Copyright 2012 Riccardo Murri <riccardo.murri@uzh.ch>.
 
 The GC3 theme style files can be redistributed and/or modified under
-the terms of the GNU Public License, version 3 or -at your option- any
+the terms of the GNU Public License, version 3 or --at your option-- any
 later version.
 
 
