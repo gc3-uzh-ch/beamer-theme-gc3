@@ -30,3 +30,11 @@
 *.vrb
 *.xdy
 *.tdo
+
+# Emacs auto-save files
+.#*
+*~
+auto/*
+
+# other VCS'es
+.svn/
