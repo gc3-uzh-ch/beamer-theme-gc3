@@ -92,6 +92,7 @@ later version.
 <!-- References: -->
 [1]: https://bitbucket.org/rivanvx/beamer/wiki/Home
 [2]: https://idcmslive01.uzh.ch/cd/live/vorlagenboerse/downloads.html#15
+[3]: http://www.cd.uzh.ch/index.html
 
 [uzh]: http://www.uzh.ch/
 
