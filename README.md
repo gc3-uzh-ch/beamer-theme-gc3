@@ -83,7 +83,7 @@ of the logo with the `english` option:
 Copyright and License
 ---------------------
 
-The original [`uzhneu` theme][2] is Copyright 2010 Juergen Spitzmueller <spitzmueller@ds.uzh.ch>.
+The original [_UZHNEU_ theme][2] is Copyright 2010 Juergen Spitzmueller <spitzmueller@ds.uzh.ch>.
 
 Modifications are Copyright 2012 Grid Computing Competence Center, University of Zurich <info@gc3.lists.uzh.ch>
 
