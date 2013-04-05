@@ -85,7 +85,7 @@ Copyright and License
 
 The original [`uzhneu` theme][2] is Copyright 2010 Juergen Spitzmueller <spitzmueller@ds.uzh.ch>.
 
-Modifications are Copyright 2012 Riccardo Murri <riccardo.murri@uzh.ch>.
+Modifications are Copyright 2012 Grid Computing Competence Center, University of Zurich <info@gc3.lists.uzh.ch>
 
 The GC3 theme style files can be redistributed and/or modified under
 the terms of the GNU Public License, version 3 or --at your option-- any
@@ -100,5 +100,6 @@ later version.
 [uzh]: http://www.uzh.ch/
 [logos]: http://www.cd.uzh.ch/downloads/logos.html
 
-<!--  LocalWords:  english usetheme
+<!--  
+ LocalWords:  english usetheme
  -->
