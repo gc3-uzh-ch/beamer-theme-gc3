@@ -1,38 +1,91 @@
-\documentclass[english,serif,mathserif]{beamer}
+\documentclass[english,serif,mathserif,usenames,dvipsnames]{beamer}
 \usetheme[informal]{gc3}
 
 \usepackage[T1]{fontenc}
-\usepackage[latin9]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{babel}
+
+%% This is optional: it adds a few commands and environment we
+%% regularly use in our slide sets
+\usepackage{gc3}
 
 \begin{document}
 
 %% Optional Argument in [Brackets]: Short Title for Footline
-\title[Short Title]{A Very Wonderful Presentation for the Benefit of the Audience}
+\title[A Wonderful Slide Set]{A Very Wonderful Slide Set for the Benefit of the Audience}
 \subtitle{Or: How to Demo the GC3 Beamer Theme}
-
 \author{A. U. Thor \texttt{<a.u.thor@uzh.ch>}}
-
 \date{\today}
 
+%% Makes the title slide
 \maketitle
 
-% chapter division
-\part{Part Divider}
 
-\begin{frame}{The title of this slide can take up two lines}
+\begin{frame}{The title of this slide can take up to two lines}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-\begin{itemize}
-\item dummy text
-\item dummy text
-\end{itemize}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  \begin{itemize}
+  \item dummy text
+  \item dummy text
+  \end{itemize}
 
-No slide is a real slide without some math:
-$$x/2 = \int_{0}^{1} ydy$$
-and a \emph{(clickable!)} web URL: \url{www.uzh.ch}
+  No slide is a real slide without some math:
+  $$x/2 = \int_{0}^{1} ydy$$
+  and a \emph{(clickable!)} web URL: \url{www.uzh.ch}
 
 \end{frame}
+
+% chapter division
+\part{A part divider slide}
+
+\begin{frame}[fragile,fragile]
+  \frametitle{Features available in \texttt{gc3.sty}}
+
+  \begin{python}
+# blocks of Python code
+def factorial(n):
+  if n > 0:
+    # with highlight too!
+    ~\HL{return n*factorial(n-1)}~
+  else:
+    return 1
+  \end{python}
+
+  \+
+  \HL{Highlighting} works in normal text as well, and
+  in \HL[green!25]{different} \HL[yellow!25]{colors}.
+
+  \+
+  The \lstinline|\+| command inserts separates paragraphs with more
+  vertical space.
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{More features from gc3.sty}
+
+  Environments for typesetting exercises, questions, and references to additional material.
+
+  \begin{question}
+    How do you typeset an exercise?
+  \end{question}
+
+  \+
+  \begin{exercise}
+    Use \lstinline|\begin{exercise}| and \lstinline|\end{exercise}| to
+    typeset an exercise.
+  \end{exercise}
+
+  \begin{seealso}
+    The \texttt{README.md} file in this directory.
+  \end{seealso}
+
+  \+
+  To use the optional features, insert this in the \LaTeX{} preamble:
+\begin{lstlisting}[language=tex]
+\usepackage{gc3}
+\end{lstlisting}
+\end{frame}
+
 \end{document}
 
 %%% Local Variables:
