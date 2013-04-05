@@ -6,7 +6,7 @@ This directory hosts the GC3 style files for use with the LaTeX
 [example.pdf](https://github.com/gc3-uzh-ch/beamer-theme-gc3/blob/master/example.pdf?raw=true)
 file.
 
-The GC3 theme is based on the Beamer theme [uzhneu][2] by Juergen
+The GC3 theme is based on the Beamer theme [UZHNEU][2] by Juergen
 Spitzmueller and the [Corporate Design section of the University of Zurich][3],
 released on October 2010.
 
@@ -79,6 +79,63 @@ of the logo with the `english` option:
         \usetheme[english]{gc3}
 
 
+Optional features from `gc3.sty`
+--------------------------------
+
+The `gc3.sty` LaTeX package defines a few additional typesetting
+commands and environments that we have found useful.
+To use them, insert this line in the preamble:
+
+    \usepackage{gc3}
+
+The following commands and LaTeX environments are defined in
+`gc3.sty`:
+
+* `\+`
+
+  Adds a larger vertical separation between paragraphs or blocks; may be repeated multiple times for greater effect.
+
+* `\begin{lstlisting} ... \end{lstlisting}`, `\begin{python} ... \end{python}`, `\begin{sh} ... \end{sh}`
+
+  We load the [listings](http://www.ctan.org/pkg/listings) package and
+  pref-configure it with colors that should blend well with the
+  GC3/UZH slide set style.
+
+  The `python` and `sh` environments are just shorthands for
+  `\begin{lstlisting}[language=python]` and `...[language=sh]`
+  respectively.
+
+* `\HL{text}`
+
+  Use `\HL` to highlight a region of text: `\HL{highlighted text}`.
+  An optional highlighting color can be specified:
+  `\HL[yellow!25]{yellow highlighter}`; color specifications follow
+  the syntax allowed by the LaTeX
+  [xcolor](http://www.ctan.org/pkg/xcolor) package.
+
+* `\begin{question} ... \end{question}`
+
+  Typeset a question.  Use Beamer's `\pause` and `\only` commands to reveal the answer.
+
+* `\begin{references} ... \end{references}`, `\begin{seealso} ... \end{seealso}`
+
+  Typeset references to additional material.
+
+* `\begin{describe}{item} descriptive text \end{describe}`
+
+  Typeset one item of a definition list; the item is typeset on a line of its own and highlighted.
+
+* `\hl{text}`
+
+  This is the highlighting used in the `describe` environment.
+
+* `\begin{exercise} ... \end{exercise}`,
+  `\begin{exercise*}[optional label] ... \end{exercise*}`
+
+  Typeset an exercise; exercises are labeled sequentially with capital roman letters A, B, C, ...
+  The starred version of the environment lets you specify the label (or does not label the block
+  if no label text is provided.
+
 
 Copyright and License
 ---------------------
@@ -100,6 +157,6 @@ later version.
 [uzh]: http://www.uzh.ch/
 [logos]: http://www.cd.uzh.ch/downloads/logos.html
 
-<!--  
+<!--
  LocalWords:  english usetheme
  -->
