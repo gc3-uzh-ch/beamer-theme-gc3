@@ -20,7 +20,7 @@
 \usepackage{amssymb}
 
 %% graphics and color
-\usepackage{color}
+\usepackage{xcolor}
   % for the color names, see: http://en.wikibooks.org/wiki/LaTeX/Colors#Predefined_colors
   % Apricot     Aquamarine      Bittersweet     Black
   % Blue        BlueGreen       BlueViolet      BrickRed
@@ -114,7 +114,7 @@
 \setlength{\parsep}{1.0em}
 
 %% use `\HL` to highlight a region of text within a code listing
-\newcommand{\HL}{\colorbox{RedViolet!35}}
+\newcommand{\HL}[1][\relax]{\colorbox{\ifx#1\relax uzh@orange!25 \else #1 \fi}}
 
 %% use `\hl` for highlighting items in listings, etc.
 \newcommand{\hl}[1]{{\bfseries\color{uzh@blue} #1}}
