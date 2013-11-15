@@ -5,7 +5,7 @@
 %% the University of Zurich, October 2010)
 %%
 %% Original copyright 2010 by Juergen Spitzmueller <spitzmueller@ds.uzh.ch>
-%% Modification copyright 2012 Riccardo Murri <riccardo.murri@uzh.ch>
+%% Modification copyright 2012-2013 Riccardo Murri <riccardo.murri@uzh.ch>
 %%
 %% This template can be redistributed and/or modified under the terms
 %% of the GNU Public License, version 2 or later.
@@ -90,11 +90,16 @@
 \setbeamercolor{framesubtitle}{parent=frametitle}
 \setbeamercolor{mini frame}{parent=structure}
 \setbeamercolor{sepline}{fg=uzh@grey,bg=uzh@grey}
-\setbeamercolor{partpage}{fg=white,bg=uzh@grey}
+\setbeamercolor{partpage}{fg=uzh@blue,bg=uzh@grey}
 \setbeamercolor{itemize item}{fg=black}
 \setbeamercolor{enumerate item}{fg=black}
+
 \RequirePackage{url}
 \def\UrlFont{\sffamily\color{uzh@orange}}
+
+% this is necessary to stop hyperref from changing the text link color;
+% see: http://tex.stackexchange.com/questions/13423/how-to-change-the-color-of-href-links-for-real
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
 
 % Inner Theme
 \useinnertheme{default}
