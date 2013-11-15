@@ -141,18 +141,18 @@
 }
 
 % Part page
+\newlength\frameheightmhead
+\setlength\frameheightmhead{\textheight}
+\addtolength\frameheightmhead{1.55em}
+\newlength\frameheightohead
+\setlength\frameheightohead{\textheight}
+\addtolength\frameheightohead{-.7em}
 \defbeamertemplate*{part page}{uzh}[1][left]
 {
   \ifbeamercolorempty[bg]{frametitle}{}{\nointerlineskip}%
   \@tempdima=\textwidth%
   \advance\@tempdima by\beamer@leftmargin%
   \advance\@tempdima by\beamer@rightmargin%
-  \newlength\frameheightmhead
-  \setlength\frameheightmhead{\textheight}
-  \addtolength\frameheightmhead{1.55em}
-  \newlength\frameheightohead
-  \setlength\frameheightohead{\textheight}
-  \addtolength\frameheightohead{-.7em}
   %
   \vspace*{-.13em}
   \begin{beamercolorbox}[wd=\the\@tempdima, ht=\frameheightmhead, leftskip=1.25cm]{partpage}
@@ -384,13 +384,6 @@
   \@tempdima=\textwidth%
   \advance\@tempdima by\beamer@leftmargin%
   \advance\@tempdima by\beamer@rightmargin%
-  \newlength\frameheightmhead
-  \setlength\frameheightmhead{\textheight}
-  \addtolength\frameheightmhead{1.5em}
-  \newlength\frameheightohead
-  \setlength\frameheightohead{\textheight}
-  \addtolength\frameheightohead{-.7em}
-%
   \vspace*{-.11em}
   \begin{beamercolorbox}[wd=\the\@tempdima, ht=\paperheight, leftskip=1.25cm]{partpage}
     \usebeamerfont{frametitle}%
