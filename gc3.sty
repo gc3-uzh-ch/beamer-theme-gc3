@@ -162,3 +162,17 @@
 }{%
   \egroup%
 }
+
+
+%% for inserting an image as a slide
+%
+% shamelessly taken from: http://tex.stackexchange.com/a/3994/110031
+% 
+\newcommand<>{\fullgraphicsframe}[1]{%
+  {
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth]{#1}}
+    \begin{frame}[plain]
+      % empty frame -- the graphics comes from above
+    \end{frame}
+  }
+}
