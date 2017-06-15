@@ -176,3 +176,13 @@
     \end{frame}
   }
 }
+
+
+%% simulate IPython prompt
+\newcounter{IPythonPrompt}
+\newcommand\In{%
+  \global\def\promptnr{\arabic{IPythonPrompt}}%
+  \stepcounter{IPythonPrompt}%
+  {\color{blue}\bfseries In\ [\promptnr]:}}
+\newcommand\Out{{\color{red}\bfseries Out[\promptnr]:}}
+\newcommand\Ct{{\color{blue}\ \ \ ...:}}
